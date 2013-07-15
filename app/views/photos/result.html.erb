@@ -1,0 +1,19 @@
+<h1>Here are the results</h1>
+<nav>
+    <form class="navbar-search pull-right">
+    <input type="text" class="search-query" placeholder="Search">
+    </form>
+</nav>
+
+<div>
+<ul class="thumbnails">
+<% @photos.each do |photo| %>
+  <li class="span4">
+    <div class="thumbnail">
+      <h3>Photo</h3>
+        <%= image_tag photo.images.standard_resolution.url %>
+    </div>
+  </li>
+<% end %>
+</ul>
+</div>

@@ -8,6 +8,7 @@ gem "json"
 gem "typhoeus"
 gem "quimby"
 gem 'oauth2'
+gem 'devise'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

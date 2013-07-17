@@ -11,16 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130717202525) do
-
-  create_table "favorites_users", :id => false, :force => true do |t|
-    t.integer "place_id"
-    t.integer "user_id"
-  end
+ActiveRecord::Schema.define(:version => 20130717211804) do
 
   create_table "places", :force => true do |t|
     t.string "name"
     t.string "location"
+  end
+
+  create_table "places_users", :id => false, :force => true do |t|
+    t.integer "place_id"
+    t.integer "user_id"
   end
 
   create_table "users", :force => true do |t|

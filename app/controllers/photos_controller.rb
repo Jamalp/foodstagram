@@ -14,7 +14,9 @@ class PhotosController < ApplicationController
   end
 
     def save
-      # user id
+      @search = Search.new(:name => search.name,
+                           :location => search.location)
+      raise
 
     end
 

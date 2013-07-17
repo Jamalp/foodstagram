@@ -12,10 +12,9 @@
         <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
       <% end %>
         <%= photo.caption.text if photo.caption %>
+    <% end %>
     </div>
   </li>
-<% end %>
 </ul>
 </div>
-
-
+<%= button_to("fave", save_place_path, :name => params[:name], :location => params[:locations]) %>

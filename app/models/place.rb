@@ -1,4 +1,5 @@
-class Places < ActiveRecord::Base
+class Place < ActiveRecord::Base
   attr_accessible :name, :location
-  belongs_to :User
+  has_and_belongs_to_many :users
+
 end

@@ -17,4 +17,4 @@
   </li>
 </ul>
 </div>
-<%= button_to("fave", save_place_path, :name => params[:name], :location => params[:locations]) %>
+<%= button_to "fave", save_place_path(name: params[:place], location: params[:location]) %>

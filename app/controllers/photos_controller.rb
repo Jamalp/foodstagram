@@ -13,12 +13,14 @@ class PhotosController < ApplicationController
     end
   end
 
-    def save
-      @search = Search.new(:name => search.name,
-                           :location => search.location)
-      raise
-
-    end
+  # POST as: save_place
+  def save
+    # current_user
+    @search = Place.new(name: params[:name],
+                        location: params[:location])
+    @search.save
+    redirect_to '#'
+  end
 
   def about
   end

@@ -1,5 +1,6 @@
 
 <div>
+  <%= render '/layouts/header' %>
   <h1 class="page-header">You're checking out <%= params[:place].capitalize %> <small>in <%= params[:location].capitalize %></small></h1>
 <ul class="thumbnails">
 <% @photos.each do |photo| %>

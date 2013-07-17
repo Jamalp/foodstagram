@@ -1,4 +1,4 @@
-class CreateUserFavoritesTable < ActiveRecord::Migration
+class CreatePlacesUsersTable < ActiveRecord::Migration
   def up
     create_table :favorites_users, id: false do |t|
       t.integer :place_id

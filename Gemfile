@@ -10,6 +10,8 @@ gem "quimby"
 gem 'oauth2'
 gem 'devise'
 gem 'flatui-rails'
+gem 'rubylight'
+# gem 'bcrypt-ruby', require: 'bcrypt'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

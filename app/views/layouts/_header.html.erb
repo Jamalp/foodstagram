@@ -5,14 +5,14 @@
       <nav>
         <ul class="nav pull-right nav-pills">
           <li><%= link_to "Home", photo_home_path %></li>
-          <% if user_signed_in? %>
+
           <li><%= link_to "Logout", '#' %></li>
-          <% else %>
+
           <li><%= link_to "Login", '#' %></li>
-          <% end %>
-          <% unless user_signed_in? %>
+
+
           <li><%= link_to "Sign Up", '#' %></li>
-          <% end %>
+
         </ul>
       </nav>
     </div>

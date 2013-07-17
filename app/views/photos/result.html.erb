@@ -5,12 +5,16 @@
 <% @photos.each do |photo| %>
   <li class="span4">
     <div class="thumbnail">
-      <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
-      <%= link_to (video_tag photo.videos.standard_resolution.url), photo.videos.standard_resolution.url  if photo.videos %>
-      <%= photo.caption.text if photo.caption.text %>
+      <% if photo.videos %>
+        <%= link_to (image_tag photo.images.standard_resolution.url), photo.videos.standard_resolution.url if photo.videos %>
+      <% else %>
+        <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
+      <% end %>
+        <%= photo.caption.text if photo.caption %>
     </div>
   </li>
 <% end %>
 </ul>
 </div>
+
 

@@ -1,8 +1,9 @@
 class CreateFavorites < ActiveRecord::Migration
   def up
     create_table :favorites do |t|
+      t.string :name
+      t.string :location
       t.belongs_to :user
-      t.belongs_to :photo
     end
   end
 

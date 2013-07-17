@@ -75,6 +75,9 @@ GEM
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
     ffi (1.9.0)
+    flatui-rails (0.0.2)
+      railties (~> 3.1)
+      sass-rails (~> 3.2.0)
     foursquare2 (1.9.7)
       faraday (~> 0.8)
       faraday_middleware (>= 0.8)
@@ -198,6 +201,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   dotenv-rails
+  flatui-rails
   foursquare2
   instagram
   jquery-rails

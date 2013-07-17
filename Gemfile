@@ -9,6 +9,7 @@ gem "typhoeus"
 gem "quimby"
 gem 'oauth2'
 gem 'devise'
+gem 'flatui-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

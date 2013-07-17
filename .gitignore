@@ -14,6 +14,4 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-.DS_store
-
-  <%= image_tag photo.images.standard_resolution.url %>
+.DS_stores

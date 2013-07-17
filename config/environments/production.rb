@@ -20,6 +20,9 @@ Foodstagram::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # In Production, :host should be set to the actual host of your application.
+  config.action_mailer.default_url_options = { :host => 'https://pacific-hollows-2813.herokuapp.com/' }
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 

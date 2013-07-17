@@ -8,9 +8,15 @@ class PhotosController < ApplicationController
       @search = client.search_venues(:near => params[:location], :query =>  params[:place])
       @foursquare_id = @search.groups[0][:items].first[:id]
       @location =  Instagram.location_search(@foursquare_id).first
-      @photos = Instagram.location_recent_media(@location.id)
+      @photos = Instagram.location_recent_media(@location.id, options = {count: 16})
+
     end
   end
+
+    def save
+      # user id
+
+    end
 
   def about
   end

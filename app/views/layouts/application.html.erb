@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Foodstagram</title>
+    <title>Places</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= render '/layouts/shim' %>
-  </head>
+</head>
   <body>
-    <%= render '/layouts/header' %>
+    <!-- for devise -->
+    <p class="alert"><%= alert %></p>
     <%= yield %>
-
   </body>
 </html>
 

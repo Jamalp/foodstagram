@@ -5,7 +5,7 @@
 
 <ul>
     <% current_user.places.each do |place| %>
-  <li>
+  <li class="list"><i class="icon-heart"></i>
    <%= link_to (place.name.titleize + " " + place.location.titleize),
    photo_result_path(place: place.name, location: place.location) %>
     <% end %>

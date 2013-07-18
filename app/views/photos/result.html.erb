@@ -6,10 +6,8 @@
     </small>
     <div class="btn btn-large btn-success">
       <%= button_to "Heart It", save_place_path(name: params[:place], location: params[:location]) %>
-      <%= button_to "Un-Heart", save_place_path(name: params[:place], location: params[:location]) %>
     </div>
   </h1>
-
   <ul class="thumbnails">
   <% @photos.each do |photo| %>
     <li class="span4">

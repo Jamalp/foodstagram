@@ -22,7 +22,6 @@ class PhotosController < ApplicationController
     current_user.places << @search
     redirect_to photo_result_path(place: params[:name],
                                   location: params[:location])
-
   end
 
 

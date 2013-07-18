@@ -11,8 +11,21 @@ h1 {
     text-shadow: 1px 1px 1px #ccc;
 }
 
-body {
-    background: url(/images/bg.jpg) repeat 0 0;
+form {
+  text-align: center;
+
+}
+
+body.background {
+  opacity: 0.2;
+}
+
+.homebg {
+    background: url(http://bobcb521.files.wordpress.com/2010/12/flatiron.jpg) no-repeat center center fixed;
+    background-opacity: 0.5;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .index_header {
@@ -25,7 +38,7 @@ body {
 }
 
 .hero-unit {
-
+  opacity: 0.8;
   padding: 60px 0;
   text-align: center;
   margin: 10px auto 10px auto;
@@ -37,6 +50,8 @@ body {
 
 div.navbar-inner {
     height: 4em;
+    opacity: 0.9;
+    border-bottom: 18px;
 }
 
 .brand {
@@ -70,11 +85,40 @@ div.navbar-inner {
 
 .welcome {
   text-align :center;
-
-  color: red
+  margin-top: 200px;
 
 }
 
-.navbar-search {
-  text-align :center
+.navbar-search pull-center {
+  text-align :center;
+  float: none;
 }
+
+
+div.background
+  {
+  background:url(klematis.jpg) repeat;
+
+  }
+div.transbox
+  {
+  border-radius: 25px;
+  box-shadow: 0 0 10px #888;
+  margin: 0 300px 50px 300px;
+  background-color:rgba(255,255,255,0.75);
+  size: cover;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  }
+
+div.transbox p
+  {
+  margin:30px 40px;
+  font-weight:bold;
+  color:#000000;
+  }
+
+  .list {
+    font-size: 24px;
+    list-style-image: url('sqpurple.gif');
+
+  }

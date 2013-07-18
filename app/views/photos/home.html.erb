@@ -1,6 +1,8 @@
+<%= render '/layouts/home.layout' %>
 <%= render '/layouts/header' %>
-<div class="hero-unit">
-<h1 class="welcome">Search Places</h1>
+<div class="background">
+  <div class="transbox">
+  <h1 class="welcome">Search Places</h1>
 
 <form class="navbar-search pull-center" action="/photos" method="get">
   <input type="string" name="place" placeholder='Place'>
@@ -8,4 +10,4 @@
   <button class="btn btn-large btn-primary">Search</button>
 </form>
 </div>
-
+</div>

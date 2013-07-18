@@ -13,7 +13,16 @@ h1 {
 
 form {
   text-align: center;
+}
 
+.nav li {
+  padding-top: 15px;
+  font-size: 18px;
+
+}
+
+header.navbar {
+  border-radius: 180px;
 }
 
 body.background {
@@ -22,7 +31,7 @@ body.background {
 
 .homebg {
     background: url(http://bobcb521.files.wordpress.com/2010/12/flatiron.jpg) no-repeat center center fixed;
-    background-opacity: 0.5;
+    /*background-opacity: 0.5;*/
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
@@ -35,8 +44,9 @@ body.background {
     width: 200px;
     margin: 0 auto;
 
-}
 
+
+}
 .hero-unit {
   opacity: 0.8;
   padding: 60px 0;
@@ -51,7 +61,6 @@ body.background {
 div.navbar-inner {
     height: 4em;
     opacity: 0.9;
-    border-bottom: 18px;
 }
 
 .brand {

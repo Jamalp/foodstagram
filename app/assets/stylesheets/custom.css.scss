@@ -7,8 +7,21 @@ p, div {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
+h1 {
+    text-shadow: 1px 1px 1px #ccc;
+}
+
 body {
     background: url(/images/bg.jpg) repeat 0 0;
+}
+
+.index_header {
+
+    margin-top: 500px;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+
 }
 
 .hero-unit {
@@ -49,10 +62,6 @@ div.navbar-inner {
   -moz-border-radius: 5px;
 }
 
-.thumbnail p {
-
-
-}
 
 .caption {
   height: 40px;

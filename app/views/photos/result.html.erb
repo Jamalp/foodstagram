@@ -1,22 +1,30 @@
-
 <div>
   <%= render '/layouts/header' %>
-  <h1 class="page-header">You're checking out <%= params[:place].capitalize %> <small>in <%= params[:location].capitalize %></small></h1>
-<ul class="thumbnails">
-<% @photos.each do |photo| %>
-  <li class="span4">
-    <div class="thumbnail">
-      <% if photo.videos %>
-        <%= link_to (image_tag photo.images.standard_resolution.url), photo.videos.standard_resolution.url if photo.videos %>
-      <% else %>
-        <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
-      <% end %>
-      <span class="caption">
-       <p class="hideOverflow"><%= photo.caption.text if photo.caption %></p>
-      </span>
-    <% end %>
+  <h1 class="page-header">You're checking out <%= params[:place].titleize %>
+    <small>
+      in <%= params[:location].titleize %>
+    </small>
+    <div class="btn btn-large btn-success">
+      <%= button_to "Heart It", save_place_path(name: params[:place], location: params[:location]) %>
+      <%= button_to "Un-Heart", save_place_path(name: params[:place], location: params[:location]) %>
     </div>
-  </li>
-</ul>
+  </h1>
+
+  <ul class="thumbnails">
+  <% @photos.each do |photo| %>
+    <li class="span4">
+      <div class="thumbnail">
+        <% if photo.videos %>
+          <%= link_to (image_tag photo.images.standard_resolution.url), photo.videos.standard_resolution.url if photo.videos %>
+        <% else %>
+          <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
+        <% end %>
+        <span class="caption">
+         <p class="hideOverflow"><%= photo.caption.text if photo.caption %></p>
+        </span>
+      <% end %>
+      </div>
+    </li>
+  </ul>
 </div>
-<%= button_to "fave", save_place_path(name: params[:place], location: params[:location]) %>
+

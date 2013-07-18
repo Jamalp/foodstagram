@@ -1,5 +1,8 @@
 <% if user_signed_in? %>
     <li>
+      <%= link_to('Favorites', photo_user_path) %>
+    </li>
+    <li>
       <%= link_to('Edit Profile', edit_user_registration_path) %>
     </li>
 <% else %>

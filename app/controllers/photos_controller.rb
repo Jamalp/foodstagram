@@ -20,10 +20,11 @@ class PhotosController < ApplicationController
                         location: params[:location])
     @search.save
     current_user.places << @search
-    raise
-    redirect_to '#'
+    redirect_to photo_result_path(place: params[:name],
+                                  location: params[:location])
 
   end
+
 
   def about
   end

@@ -4,6 +4,10 @@ div.navbar-inner {
     height: 4em;
 }
 
+.brand {
+  text-align: left;
+}
+
 .thumbnail {
   height: 320px;
   border-radius: 5px;
@@ -16,5 +20,15 @@ div.navbar-inner {
 .caption {
   height: 40px;
   overflow: scroll;
+}
 
+.welcome {
+  text-align :center;
+
+  color: red
+
+}
+
+.navbar-search {
+  text-align :center
 }

@@ -19,7 +19,10 @@ class PhotosController < ApplicationController
     @search = Place.new(name: params[:name],
                         location: params[:location])
     @search.save
+    current_user.places << @search
+    raise
     redirect_to '#'
+
   end
 
   def about

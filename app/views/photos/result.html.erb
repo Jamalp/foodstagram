@@ -12,7 +12,7 @@
         <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
       <% end %>
       <span class="caption">
-       <p><%= photo.caption.text if photo.caption %></p>
+       <p class="hideOverflow"><%= photo.caption.text if photo.caption %></p>
       </span>
     <% end %>
     </div>

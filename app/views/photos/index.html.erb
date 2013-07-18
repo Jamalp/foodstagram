@@ -1,3 +1,11 @@
-<h1>Sup, Im you</h1>
+<h1>Sup, <%= current_user.name %></h1>
 
-<%= current_user.places %>
+<h2>Heres what you've saved to your list</h2>
+
+<ul>
+    <% current_user.places.each do |place| %>
+  <li>
+   <a href=""><%= place.name %> in <%= place.location%></a>
+    <% end %>
+  </li>
+</ul>

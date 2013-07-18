@@ -1,5 +1,27 @@
 @import "bootstrap";
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fauna One', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: url(/images/bg.jpg) repeat 0 0;
+}
+
+.hero-unit {
+
+  padding: 60px 0;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+
+}
+
 div.navbar-inner {
     height: 4em;
 }
@@ -8,13 +30,28 @@ div.navbar-inner {
   text-align: left;
 }
 
+.hideOverflow
+{
+    font-size: 16px;
+    overflow:auto;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    width:100%;
+    display:block;
+}
+
 .thumbnail {
-  height: 320px;
+  height: 330px;
   border-radius: 5px;
   box-shadow: 1px 1px 10px #444;
 
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+}
+
+.thumbnail p {
+
+
 }
 
 .caption {

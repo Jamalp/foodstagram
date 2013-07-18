@@ -11,7 +11,9 @@
       <% else %>
         <%= link_to (image_tag photo.images.standard_resolution.url), photo.images.standard_resolution.url if photo.images %>
       <% end %>
+      <span class="caption">
         <%= photo.caption.text if photo.caption %>
+      </span>
     <% end %>
     </div>
   </li>

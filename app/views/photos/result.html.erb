@@ -4,9 +4,9 @@
     <small>
       in <%= params[:location].titleize %>
     </small>
-    <div class="btn btn-large btn-success">
-      <%= button_to "Heart It", save_place_path(name: params[:place], location: params[:location]) %>
-    </div>
+
+      <%= button_to "Heart It", save_place_path(name: params[:place], location: params[:location], :class => "btn btn-danger") %>
+
   </h1>
   <ul class="thumbnails">
   <% @photos.each do |photo| %>

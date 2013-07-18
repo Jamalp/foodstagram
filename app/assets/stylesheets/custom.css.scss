@@ -38,15 +38,22 @@ body.background {
 }
 
 .index_header {
-
+    padding: 20px;
+    padding-bottom: 20px;
     margin-top: 500px;
     height: 200px;
-    width: 200px;
+    width: 800px;
     margin: 0 auto;
 
+}
 
+.index_h2 {
+  font-size: 60px;
+  padding: 50px;
+  margin-left: 100px;
 
 }
+
 .hero-unit {
   opacity: 0.8;
   padding: 60px 0;

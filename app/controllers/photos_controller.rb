@@ -24,6 +24,9 @@ class PhotosController < ApplicationController
                                   location: params[:location])
   end
 
+  def destroy
+    current_user.places.destroy
+  end
 
   def about
   end

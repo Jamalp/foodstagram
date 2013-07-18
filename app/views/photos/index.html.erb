@@ -1,14 +1,14 @@
 <%= render '/layouts/header' %>
 <h1 class="index_header">Sup, <%= current_user.name %></h1>
 
-<h2=class=>Heres what you've saved to your list</h2>
+<h2=class="index_h2">Heres what you've saved to your list</h2>
 
 <ul>
     <% current_user.places.each do |place| %>
-  <li class="list"><i class="icon-heart"></i>
+  <li class="thumbnail">
    <%= link_to (place.name.titleize + " " + place.location.titleize),
    photo_result_path(place: place.name, location: place.location) %>
-    <% end %>
+   <% end %>
   </li>
 </ul>
 <% link_to "Place", '/photos?place=place&location=location' %>

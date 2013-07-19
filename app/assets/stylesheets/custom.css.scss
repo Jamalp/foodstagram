@@ -41,7 +41,7 @@ body.background {
     padding: 20px;
     padding-bottom: 20px;
     margin-top: 500px;
-    height: 200px;
+    height: 100px;
     width: 800px;
     margin: 0 auto;
 
@@ -88,11 +88,42 @@ div.navbar-inner {
   height: 330px;
   border-radius: 5px;
   box-shadow: 1px 1px 10px #444;
-
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
 
+.thumbnail_index {
+  background-image: url(https://s3.amazonaws.com/uploads.hipchat.com/39979/362034/tq68yysnq9f775w/hearticon.png);
+  margin: auto;
+  height: 160px;
+  width: 170px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #444;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+div.thumbnail_index {
+  margin: 30px;
+
+}
+
+.thumbnail_index a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.thumbnail_index a:hover {
+  color: #7EE8FF;
+}
+
+.hearts {
+ width: 800px;
+ margin: auto;
+
+}
 
 .caption {
   height: 40px;
@@ -111,11 +142,7 @@ div.navbar-inner {
 }
 
 
-div.background
-  {
-  background:url(klematis.jpg) repeat;
 
-  }
 div.transbox
   {
   border-radius: 25px;
@@ -128,7 +155,7 @@ div.transbox
 
 div.transbox p
   {
-  margin:30px 40px;
+  margin:40px 40px;
   font-weight:bold;
   color:#000000;
   }

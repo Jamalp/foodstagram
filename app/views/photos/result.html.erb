@@ -1,11 +1,13 @@
-<div>
+
   <%= render '/layouts/header' %>
+  <div>
   <h1 class="page-header">You're checking out <%= params[:place].titleize %>
     <small>
       in <%= params[:location].titleize %>
     </small>
 
-      <%= button_to "Heart It", save_place_path(name: params[:place], location: params[:location], :class => "btn btn-danger") %>
+      <%= button_to "heart", save_place_path(name: params[:place], location: params[:location]), class: "buttonless" do %>
+      <% end %>
 
   </h1>
   <ul class="thumbnails">

@@ -1,6 +1,7 @@
 <%= render '/layouts/header' %>
 <%= render '/layouts/index.layout' %>
-<h1 class="index_header">Hey, <%= current_user.name %> <small>Heres what you've favorited</small></h1>
+<h1 class="index_header">Hey, <%= current_user.name %><br>
+ <small>Heres what you've favorited</small></h1>
 
 <ul class="thumbnails">
     <% current_user.places.each do |place| %>

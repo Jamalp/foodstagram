@@ -1,12 +1,12 @@
-
+  <%= render '/layouts/result_layout'%>
   <%= render '/layouts/header' %>
   <div>
-  <h1 class="page-header">You're checking out <%= params[:place].titleize %>
+  <h1 class="page-header">You're checking out <%= params[:place].titleize %><br>
     <small>
-      in <%= params[:location].titleize %>
+      In <%= params[:location].titleize %>
     </small>
 
-      <%= button_to "heart", save_place_path(name: params[:place], location: params[:location]), class: "buttonless" do %>
+      <%= button_to "Bookmark", save_place_path(name: params[:place], location: params[:location]), class: "buttonless" do %>
       <% end %>
 
   </h1>

@@ -24,8 +24,17 @@ header.navbar {
   border-radius: 180px;
 }
 
+.page-header {
+  text-align: center;
+}
+
 body.background {
   opacity: 0.2;
+}
+
+.resultbg {
+
+background: url(cream.png);
 }
 
 .homebg {
@@ -37,7 +46,7 @@ body.background {
 }
 
 .indexbg {
-  background: url(subtle_stripes.png);
+  background: url(cream.png);
 }
 
 .index_header {
@@ -47,6 +56,8 @@ body.background {
     height: 100px;
     width: 800px;
     margin: 0 auto;
+    text-align: center;
+    color: #0088cc;
 }
 
 .buttonless {
@@ -88,7 +99,7 @@ div.navbar-inner {
     font-size: 16px;
     overflow:auto;
     white-space:nowrap;
-    text-overflow:ellipsis;
+    text-overflow: clipped overflow;
     width:100%;
     display:block;
 }
@@ -161,7 +172,7 @@ div.transbox
   {
   border-radius: 25px;
   box-shadow: 0 0 10px #888;
-  margin: 0 300px 50px 300px;
+  margin: 0 480px 50px 480px;
   background-color:rgba(255,255,255,0.75);
   size: cover;
   filter:alpha(opacity=60); /* For IE8 and earlier */
@@ -177,5 +188,4 @@ div.transbox p
   .list {
     font-size: 24px;
     list-style-image: url('sqpurple.gif');
-
   }
